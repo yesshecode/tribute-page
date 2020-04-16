@@ -1,0 +1,43 @@
+#img-div {
+    border: solid 1px salmon;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    
+}
+
+#image {
+    grid-column: 2 / 8;
+    justify-self: center; 
+    max-width: 100%;
+    height: auto;   
+}
+
+#title {
+    grid-column: 2 / 5;
+    color: salmon;
+}
+
+#img-caption {
+    grid-column: 6 / -2;
+    align-self: flex-end;
+    justify-self: end;
+    color: salmon;
+}
+
+#title, #image, #img-caption {
+    grid-row: 2 / 3;
+}
+
+#tribute-info {
+    display: grid;
+    grid-template-columns: 1fr 30vw;
+    grid-gap: 50px 20px;
+}
+
+#bio {
+    grid-column: 1 / 2;
+}
+
+#video {
+    grid-column: 2 / 3;
+}
